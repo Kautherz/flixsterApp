@@ -14,33 +14,6 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return movies.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
-        
-        let movie = movies[indexPath.row]
-        let title = movie["title"] as! String // as! = casting
-        let synopsis = movie["overview"] as! String
-        
-        cell.titleLabel.text = title
-        cell.synopsisLabel.text = synopsis
-        
-        let baseURL = "https://image.tmdb.org/t/p/w185"
-        let posterPath = movie["poster_path"] as! String
-        let posterURL = URL(string: baseURL + posterPath)
-        
-        
-        cell.posterView.af_setImage(withURL: posterURL!)
-        
-        
-        return cell
-    }
-
-    
     var movies = [[String:Any]]()
 
     override func viewDidLoad() {
@@ -75,6 +48,33 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         task.resume()
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movies.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell") as! MovieCell
+        
+        let movie = movies[indexPath.row]
+        let title = movie["title"] as! String // as! = casting
+        let synopsis = movie["overview"] as! String
+        
+        cell.titleLabel.text = title
+        cell.synopsisLabel.text = synopsis
+        
+        let baseURL = "https://image.tmdb.org/t/p/w185"
+        let posterPath = movie["poster_path"] as! String
+        let posterURL = URL(string: baseURL + posterPath)
+        
+        
+        cell.posterView.af.setImage(withURL: posterURL!)
+        
+        
+        return cell
+    }
+
     
 
     /*
