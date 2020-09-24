@@ -20,7 +20,7 @@ FlixsterApp is an app that allows users to browse movies from the [The Movie Dat
 ### App Walkthrough GIF
 `TODO://` Add the URL to your animated app walkthough `gif` in the image tag below, `YOUR_GIF_URL_HERE`. Make sure the gif actually renders and animates when viewing this README. (🚫 Remove this paragraph after after adding gif)
 
-<img src="YOUR_GIF_URL_HERE" width=250><br>
+<img src="http://g.recordit.co/OJUg92oU3M.gif" width=250><br>
 
 ### Notes
 The only challenge I had when creating this app was when I had to download CocoaPods. The issue I had was that I had MacOS Mojava and hadn't updated to MacOS Catallina yet. I decided to install CocoaPods on my computer without updating, but when I went to work in the workspace, it wouldn't let me import AlamofireImage. However, when I updated my computer and downloaded the latest version of Xcode, it ended up working.
