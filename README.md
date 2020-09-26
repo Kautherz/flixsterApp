@@ -19,10 +19,6 @@ FlixsterApp is an app that allows users to browse movies from the [The Movie Dat
 
 ### App Walkthrough GIFs
 
-Walkthrough with iPhone XR:
-
-<img src="" width=250><br>
-
 Walkthrough with iPhone 8 Plus (works on all iphone sizes and orientations):
 
 <img src="http://g.recordit.co/LBKprnKfD3.gif" width=583><br>
