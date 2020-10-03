@@ -9,18 +9,25 @@
 import UIKit
 import AlamofireImage
 
+extension MovieGridViewController  {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("Selected cell number: \(indexPath.row)")
+    }
+}
+
 class MovieGridViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
+
     @IBOutlet weak var collectionView: UICollectionView!
     
     var movies = [[String:Any]]()
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
@@ -74,18 +81,29 @@ class MovieGridViewController: UIViewController, UICollectionViewDataSource, UIC
         return cell
         
     }
-    
-    
-    
-
-    /*
+        
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UICollectionViewCell
+        let indexPath = collectionView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        let detailsViewController = segue.destination as! SuperheroMovieDetailsViewController
+        detailsViewController.movie = movie
+        
+        
+        
     }
-    */
+    
 
 }
+
+
+
+
+
