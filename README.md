@@ -20,8 +20,6 @@ FlixsterApp is an app that allows users to browse movies from the [The Movie Dat
 
 <img src="http://g.recordit.co/IsffYhT2cU.gif" width=250><br>
 
-<img src="http://g.recordit.co/UQLbe6cXcZ.gif" width=250><br>
-
 ### Notes
 I didn't have any challenges with implementing the required functionality. 
 
