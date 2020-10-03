@@ -18,6 +18,8 @@ FlixsterApp is an app that allows users to browse movies from the [The Movie Dat
 
 ### App Walkthrough GIF
 
+<img src="http://g.recordit.co/hRh706RYcG.gif" width=250><br>
+
 <img src="http://g.recordit.co/UQLbe6cXcZ.gif" width=250><br>
 
 ### Notes
