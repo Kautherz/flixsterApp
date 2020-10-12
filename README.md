@@ -20,9 +20,6 @@ FlixsterApp is an app that allows users to browse movies from the [The Movie Dat
 
 <img src="http://g.recordit.co/IsffYhT2cU.gif" width=250><br>
 
-### Notes
-I didn't have any challenges with implementing the required functionality. 
-
 ---
 
 ## Flix Part 1
@@ -44,5 +41,4 @@ Walkthrough with iPhone 8 Plus (works on all iphone sizes and orientations):
 
 <img src="http://g.recordit.co/LBKprnKfD3.gif" width=583><br>
 
-### Notes
-The only challenge I had when creating this app was when I had to download CocoaPods. The issue I had was that I had MacOS Mojave and hadn't updated to MacOS Catallina yet. I decided to install CocoaPods on my computer without updating, but when I went to work in the workspace, it wouldn't let me import AlamofireImage. However, when I updated my computer, downloaded the latest version of Xcode, and re-installed CocoaPods the MacOS Catallina way, it ended up working.
+
